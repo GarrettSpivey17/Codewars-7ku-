@@ -1,0 +1,14 @@
+1  Band name generator
+  https://www.codewars.com/kata/59727ff285281a44e3000011/train/python
+
+  def band_name_generator(name: str) -> str:
+      name = name.lower()
+      if name[0] == name[-1]:
+          return name.title() + name[1:]
+      else:
+        return "The " + name.title()
+  the second line makes sure that any input will become lowercase, next i used an if else
+  statement, so if the name has the same first and last letter it adds the name with the name minus the first letter while also capitalizing the first letter.  
+  If the name does not include the same first and last letter the else statment returns the name with "the" before the name and still capitalizes it. 
+
+2  
